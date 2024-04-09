@@ -8,6 +8,13 @@ import { sendEmail } from "@/helper/mailer";
 
 connect();
 
+// http://localhost:3001/api/users/signup
+// Method:- POST
+// {
+//     "username":"akshay",
+//     "password":"12345",
+//     "email":"akshay@gmail.com"
+// }
 export async function POST(request: NextRequest) {
     try {
         const reqBody = await request.json();
